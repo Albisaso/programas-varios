@@ -1,15 +1,3 @@
-/*************************************************************************
- * Curso de Programación 1. Práctica 3
- * Autores: Javier Martínez, Miguel Ángel Latre
- *			y Sergio Beltrán García con NIP: 757201
- * Última revisión: 30 de octubre de 2018
- * Resumen: Fichero de implementación de un módulo «fechas» que ofrece
- *          funciones para trabajar con fechas del calendario
- *          Versión con esqueletos de las funciones a implementar por el
- *          alumno, que deberá añadirse como autor y actualizar la fecha
- *          de última revisión al acabar.
- ************************************************************************/
-
  /*
  * Pre:  La terna de parámetos «dia», «mes» y «agno» definen una fecha
  *       válida del calendario gregoriano, la fecha «dia/mes/agno».

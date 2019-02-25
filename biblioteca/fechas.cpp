@@ -124,23 +124,22 @@ int diaEnElAgno(int dia, int mes, int agno) {
  */
 int diaSiguiente(int fecha) {
 	int dia, mes, agno;
-	if (fecha % 100 == diasDelMes((fecha / 100) % 100, fecha / 10000) &&
-		(fecha / 100) % 100 == 12) {
-		//La fecha indicada es el ultimo día de un agno
-		return ((fecha / 10000) + 1) * 10000 + 101;
-		//Al sumar 101 a una fecha compuesta donde sus ultimas cuatro cifras
-		//son ceros hacemos que el mes y el día valgan 1
+	descomponer(fecha, dia, mes, agno);
+	if (mes == 12 && dia == 31){
+        	//La fecha indicada es el ultimo día de un agno
+        	agno++;
+        	mes = 1;
+        	dia = 1;
 	}
-	else if (fecha % 100 == diasDelMes((fecha / 100) % 100, fecha / 10000)) {
-		//La fecha indicada es el último día de un mes, descontando
-		//el mes 12 que se ejecutaría en el if
-		descomponer(fecha, dia, mes, agno);
-		mes++;
-		dia = 1;
-		componer(dia, mes, agno, fecha);
-		return fecha;
+	else if (dia == diasDelMes(mes, agno)){
+		/*La fecha indicada es el último día de un mes, descontando
+		el mes 12 que se ejecutaría en el if */
+        	mes++;
+        	dia = 1;
 	}
 	else {
-		return fecha + 1;
+		dia++;
 	}
+	componer(dia, mes, agno, fecha);
+	return fecha;
 }

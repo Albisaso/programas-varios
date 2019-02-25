@@ -1,2 +1,2 @@
 # programas-varios
-Contenedor de programas
+Esto es un repositorio donde hay guardados algunos programas

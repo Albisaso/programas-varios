@@ -1,16 +1,3 @@
-/*********************************************************************************
- * Curso de Programación 1. Tema 7 y prueba voluntaria de evaluación 1
- * Autores: Miguel Ángel Latre, Javier Martínez y
- *          Sergio Beltrán García con NIP: 757201
- * Última revisión: 3 de noviembre de 2018
- * Resumen: Programa que escribe en la pantalla el calendario de un determinado
- *          mes de un año, que se solicitan al usuario. El programa se asegura de
- *          que el mes introducido está comprendido entre 1 y 12 y de que el año
- *          es igual o posterior a 1900.
- *          Clase de problemas correspondiente al tema 7 (diseño modular y
- *          descendente) y 1ª prueba voluntaria de evaluación (curso 2018-19).
-\********************************************************************************/
-
 #include <iostream>
 #include <iomanip>
 #include "../../Biblioteca/fechas.h"
